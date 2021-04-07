@@ -14,7 +14,8 @@
 .hero {
     display: flex;
     flex-flow: column;
-    height: 940px;
+    /* height: 940px; */
+    height: auto;
     background-image: url("../assets/bcg_hero.png");
     position: relative;
     background-repeat: no-repeat;
@@ -68,6 +69,7 @@ header {
   line-height: 64px;
   font-size: 48px;
   text-align: center;
+  justify-content: space-around;
 }
 
 .btn_default {
@@ -111,8 +113,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-self: center;
-  width: 100%;
   max-width: 440px;
+  justify-content: center;
 }
 
 .hero .btn_container button {
@@ -189,6 +191,5 @@ header {
   font-size: 14px;
   line-height: 24px;
   color: #3a9c61;
-  text-align: center;
   text-transform: uppercase;
 }
