@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  /* section {
+    padding: 100px 8%;
+    width: 100%;
+  } */
+
+.hero {
+    display: flex;
+    flex-flow: column;
+    height: 940px;
+    background-image: url("../assets/bcg_hero.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    /* padding-top: 30px; */
+    background-color: #241e18;
+      
+}
+
+
+
+.hero.logo {
+    font-family: "Merriweather", sans-serif;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+
+.green.job_title {
+  display: flex;
+  color: #3a9c61;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ?? don't sure */
+
+.hero .job_title {
+  margin-bottom: 100px;
+}
+
+/* end of don't sure */
+
+.hero h1 {
+  display: flex;
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 64px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.btn_default {
+  width: 200px;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 0;
+  transition: all 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn_default.btn_white {
+  color:#fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+
+.btn_default.btn_white:hover {
+  background-color: #fff;
+  color: #3a9c61;
+}
+
+.btn_default.btn_orange {
+  background-color: #fab447;
+  color: #fff;
+}
+
+.btn_default.btn_orange:hover {
+  color: #fab447;
+  background-color: #fff;
+}
+
+/* ?? don't sure */
+
+.hero.btn_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+  max-width: 440px;
+}
+
+.hero .btn_container button {
+  margin: 5px;
+}
+
+/* end of don't sure */
+
+.hero nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.hero nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero nav ul li {
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.hero nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero nav ul li:hover {
+  border-bottom: 2px solid #3a9c61;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3a9c61;
+  height: 10px;
+  z-index: 1;
+}
+
+.services{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 827px;
+  background-color: #fff;
+  padding: 100px 8%;
+}
+
+.services.h5_black {
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #241e18;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.services.h6_green {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3a9c61;
+  text-align: center;
+  text-transform: uppercase;
+}
