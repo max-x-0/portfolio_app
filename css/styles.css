@@ -15,6 +15,7 @@
     display: flex;
     flex-flow: column;
     height: 100vh; 
+    min-height: 940px;
     background-image: url("../assets/bcg_hero.png");
     position: relative;
     background-repeat: no-repeat;
@@ -35,6 +36,11 @@
     font-size: 24px;
     align-items: center;
     padding-top: 19px;
+}
+
+.link_logo {
+  text-decoration: none;
+  color: #fff;
 }
 
 header {
@@ -169,10 +175,9 @@ h6.green {
   width: 100%;
   height: 827px;
   background-color: #fff;
-  padding: 100px 8%;
 }
 
-.services.h5_black {
+.services .h5_black {
   font-family: "Merriweather", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -180,18 +185,65 @@ h6.green {
   color: #241e18;
   text-align: center;
   text-transform: capitalize;
+  margin: 0;
+  height: 50px;
 }
 
-.services.h6_green {
+.services .h6_green {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: #3a9c61;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  height: 30px;
+  margin-top: 29px;
 }
 
-.link_logo {
-  text-decoration: none;
-  color: #fff;
+.services .icons_container {
+  display: flex;
+  margin: 0;
+  margin-top: 98px;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 945px;
+  width: 100%;
+  flex-flow: row wrap;
+  /* height: 165px; */
 }
+
+.icon_default {
+  background-color: #3a9c61;
+  width: 165px;
+  height: 165px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.img_services_1 {
+  position: absolute;
+  right: 55px;
+  top: 55px;
+  bottom: 55px;
+  left: 55px;
+}
+
+.img_services_2 {
+  position: absolute;
+  right: 58px;
+  top: 58px;
+  bottom: 58px;
+  left: 58px;
+}
+
+.img_services_3 {
+  position: absolute;
+  right: 48px;
+  top: 60px;
+  bottom: 60px;
+  left: 55px;
+}
+
+
