@@ -6,34 +6,35 @@
     font-family: "Open Sans", sans-serif;
   }
 
-  /* section {
+  section {
     padding: 100px 8%;
     width: 100%;
-  } */
+  }
 
 .hero {
     display: flex;
     flex-flow: column;
-    /* height: 940px; */
-    height: auto;
+    height: 100vh; 
     background-image: url("../assets/bcg_hero.png");
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    /* padding-top: 30px; */
+    padding-top: 30px; 
     background-color: #241e18;
       
 }
 
 
 
-.hero.logo {
+.hero_logo {
     font-family: "Merriweather", sans-serif;
     color: #fff;
     line-height: 24px;
     font-weight: 800;
     font-size: 24px;
+    align-items: center;
+    padding-top: 19px;
 }
 
 header {
@@ -42,23 +43,18 @@ header {
   margin-bottom: 115px;
 }
 
-.green.job_title {
-  display: flex;
+h6.green {
   color: #3a9c61;
-  font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
-
-/* ?? don't sure */
 
 .hero .job_title {
   margin-bottom: 100px;
 }
-
-/* end of don't sure */
 
 .hero h1 {
   display: flex;
@@ -79,6 +75,7 @@ header {
   font-weight: bold;
   border-radius: 30px;
   border: 0;
+  outline: 0px;
   transition: all 0.4s;
   cursor: pointer;
   text-transform: uppercase;
@@ -108,13 +105,13 @@ header {
 
 /* ?? don't sure */
 
-.hero.btn_container {
+.hero .btn_container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-self: center;
   max-width: 440px;
-  justify-content: center;
+  width: 100%;
 }
 
 .hero .btn_container button {
@@ -192,4 +189,9 @@ header {
   line-height: 24px;
   color: #3a9c61;
   text-transform: uppercase;
+}
+
+.link_logo {
+  text-decoration: none;
+  color: #fff;
 }
