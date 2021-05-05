@@ -33,7 +33,39 @@
         </h1>
         <div class="btn_container">
           <button class="btn_default btn_white">learn more</button>
-          <button class="btn_default btn_orange" id="not_a_number">contact me</button>
+          <button class="btn_default btn_orange" id="btn_contact">contact me</button>
+        </div>
+        <div class="modal" id="hero_modal">
+          <div class="modal content">
+            <div class="modal info">
+              <h5 class="info h5_white">contact me</h5>
+              <p class="info paragraphs">
+                <b class="paragraphs bold_txt">Lorem ipsum dolor sit amet,<br/>
+                   consectetur adipiscing elit.<br/>
+                  Integer iaculis ullamcorper.</b>
+                <br/>
+                <br/>
+                <br/>
+                Phasellus tempor ac lorem<br/>
+                non suscipit. Integer iaculis<br/>
+                vestib ulum accumsan. Pellen<br/>
+                tesque tristique hendrerit<br/>
+                diam, ac faucibus magna<br/>
+                porta sed.
+              </p>
+            </div>
+            <form class="modal form" action="">
+              <button class="form btn_form_close" id="btn_close_modal">
+                <div class="btn_form_close ico_container"></div>
+              </button>
+              <div class="form txt_container">
+                <textarea class="txt_container txt_default" name="" id="" cols="30" rows="10" placeholder="Your name"></textarea>
+                <textarea class="txt_container txt_default" name="" id="" cols="30" rows="10" placeholder="Your email address"></textarea>
+                <textarea class="txt_container txt_default txt_big" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+              </div>
+              <input class="form btn_default btn_orange" type="submit" value="submit"/>
+            </form>
+          </div>
         </div>
     </section>
     <section class="services">
@@ -129,18 +161,40 @@
       <h5 class="my_work h5_black">my work</h5>
       <h6 class="my_work h6_green">lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
       <div class="my_work img_container">
-        <div class="img_container img special">
-          <!-- <img class="img_container img single" src="./assets/my_work_img_1.png" alt="image 1"> -->
-        </div>
-        <img class="img_container img" src="./assets/my_work_img_2.png" alt="image 2">
-        <img class="img_container img" src="./assets/my_work_img_3.png" alt="image 3">
-        <img class="img_container img" src="./assets/my_work_img_4.png" alt="image 4">
-        <img class="img_container img" src="./assets/my_work_img_5.png" alt="image 5">
-        <img class="img_container img" src="./assets/my_work_img_6.png" alt="image 6">
-        <img class="img_container img" src="./assets/my_work_img_7.png" alt="image 7">
-        <img class="img_container img" src="./assets/my_work_img_8.png" alt="image 8">
+        <div class="img_container img special"></div>
+        <img class="img_container img" src="./assets/my_work_img_2.png" alt="image 2" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_3.png" alt="image 3" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_4.png" alt="image 4" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_5.png" alt="image 5" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_6.png" alt="image 6" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_7.png" alt="image 7" draggable="false">
+        <img class="img_container img" src="./assets/my_work_img_8.png" alt="image 8" draggable="false">
       </div>
-      <button class="my_work btn_default btn_white">see more projects</button>
+      <div class="my_work_modal" id="my_work_modal_win">
+        <div class="my_work_modal content">
+          <div class="my_work img_container">
+            <div class="img_container img special"></div>
+            <img class="img_container img" src="./assets/my_work_img_2.png" alt="image 2" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_3.png" alt="image 3" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_4.png" alt="image 4" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_5.png" alt="image 5" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_6.png" alt="image 6" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_7.png" alt="image 7" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_8.png" alt="image 8" draggable="false">
+          </div>
+          <div class="my_work img_container">
+            <div class="img_container img special"></div>
+            <img class="img_container img" src="./assets/my_work_img_2.png" alt="image 2" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_3.png" alt="image 3" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_4.png" alt="image 4" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_5.png" alt="image 5" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_6.png" alt="image 6" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_7.png" alt="image 7" draggable="false">
+            <img class="img_container img" src="./assets/my_work_img_8.png" alt="image 8" draggable="false">
+          </div>
+        </div>
+      </div>
+      <button class="my_work btn_default btn_white" id="btn_open_modal_my_work">see more projects</button>
     </section>
     <section class="reviews">
       <h5 class="reviews h5_black">what my clients say</h5>
@@ -184,6 +238,6 @@
 src="./assets/basement_img_2.png" alt="instagram_logo"
 src="./assets/basement_img_3.png" alt="email_logo"
 src="./assets/basement_img_4.png" alt="rss_logo" -->
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js"></script> 
 </body>
 </html>
